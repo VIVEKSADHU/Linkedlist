@@ -1,0 +1,17 @@
+public int removeLast(){
+  if(size==0){
+    System.out.println("LL is empty");
+    }
+  else if(size==1){
+    int val=head.data;
+    head=tail=null;
+    }
+    Node temp=head;
+  for(int i=0;i<size-2;i++){
+    temp=temp.next;
+    }
+  int val=temp.next;
+  temp.next=null;
+  tail=temp;
+  return val;
+  }
