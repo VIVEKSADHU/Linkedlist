@@ -1,0 +1,13 @@
+public void addFirst(int data){
+Node newNode=new Node(data); //1.create new node
+if(head==null){
+head=tail=null;
+}
+newNode.next=head; //2
+head=newNode;  //3
+}
+public static void main(String args[]){
+linkedlist ll=new linkedlist();
+ll.addFirst(1);
+ll.addFirst(2);
+}
