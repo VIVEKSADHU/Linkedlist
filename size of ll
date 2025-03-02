@@ -1,0 +1,4 @@
+temp=head;
+while(temp!=null){
+count++;
+}
